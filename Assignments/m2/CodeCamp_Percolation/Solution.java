@@ -4,31 +4,31 @@ import java.util.Scanner;
  */
 class Percolation {
 	/**
-	 * { var_description }
+	 * declaration of wqu.
 	 */
 	private WeightedQuickUnionUF wqf;
 	/**
-	 * { var_description }
+	 * declaration of n.
 	 */
 	private int n;
 	/**
-	 * { var_description }
+	 * declaration of size.
 	 */
 	private int size;
 	/**
-	 * { var_description }
+	 * declaration of first.
 	 */
 	private int first;
 	/**
-	 * { var_description }
+	 * declaration of last.
 	 */
 	private int last;
 	/**
-	 * { var_description }
+	 * declaration of connected.
 	 */
 	private boolean[] connected;
 	/**
-	 * { var_description }
+	 * declaration of count.
 	 */
 	private int count;
 	/**
@@ -72,7 +72,7 @@ class Percolation {
    	}
    }
    /**
-    * { function_description }
+    * numberOfOpenSites.
     *
     * @return     { description_of_the_return_value }
     */
@@ -80,7 +80,7 @@ class Percolation {
    	return count;
    }
    /**
-    * { function_description }
+    * open.
     *
     * @param      row   The row
     * @param      col   The col
@@ -116,9 +116,22 @@ class Percolation {
 
 
    }
+   /**
+    * Determines if open.
+    *
+    * @param      row   The row
+    * @param      col   The col
+    *
+    * @return     True if open, False otherwise.
+    */
    public boolean isOpen(final int row, final int col) {
    	return connected[indexOf(row, col)];
    }
+   /**
+    * percolates.
+    *
+    * @return     { description_of_the_return_value }
+    */
    public boolean percolates() {
    	return wqf.connected(first, last);
    }
