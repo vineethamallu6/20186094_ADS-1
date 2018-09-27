@@ -1,8 +1,3 @@
-/**.
- * author : harinatha reddy.
- * date : 26:9:18
- * name : threesum probelm.
- */
 import java.util.Arrays;
 import java.util.Scanner;
 /**
