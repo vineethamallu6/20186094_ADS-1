@@ -30,7 +30,7 @@ class SortedArray {
      * @param      a     { parameter_description }
      * @param      b     { parameter_description }
      */
-    SortedArray (final int[] a, final int[] b) {
+    SortedArray(final int[] a, final int[] b) {
         this.size1 = a.length;
         this.size2 = b.length;
         this.array1 = a;
