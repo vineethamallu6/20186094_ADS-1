@@ -1,11 +1,35 @@
 import java.util.Arrays;
 import java.util.Scanner;
+/**
+ * Class for sorted array.
+ */
 class SortedArray {
+	/**
+	 * size1.
+	 */
 	private int size1;
+	/**
+	 * size2.
+	 */
     private int size2;
+    /**
+     * array1.
+     */
     private int[] array1;
+    /**
+     * array2.
+     */
     private int[] array2;
+    /**
+     * array3.
+     */
     private int[] array3;
+    /**
+     * Constructs the object.
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     */
 	public SortedArray (final int[] a, final int[] b) {
 		this.size1 = a.length;
 		this.size2 = b.length;
@@ -13,6 +37,14 @@ class SortedArray {
 		this.array2 = b;
 		this.array3 = new int[size1 + size2];
 	}
+	/**
+	 * sortArray.
+	 *
+	 * @param      a1    A 1
+	 * @param      b1    The b 1
+	 *
+	 * @return     returns sorted array.
+	 */
 	public int[] sortArray(final int[] a1, final int[] b1) {
 		int i = 0;
 		int j = 0;
