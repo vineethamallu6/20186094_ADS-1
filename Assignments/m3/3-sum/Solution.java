@@ -1,38 +1,52 @@
+/**.
+ * author : harinatha reddy.
+ * date : 26:9:18
+ * name : threesum probelm.
+ */
+import java.util.Arrays;
 import java.util.Scanner;
-class ThreeSum
-{
-	private long[] array;
-	private long size;
-	public ThreeSum(long size, long[] array) {
-		this.size = size;
-		this.array = array;
-	}
-	public long threeSum(long[] array) {
-		long n = array.length;
-		long count = 0;
-		for (int i = 0; i < n; i++) {
-			for (int j = i+1; j < n; j++) {
-				for (int k = j+1; k < n; k++) {
-					if (array[i] + array[j] + array[k] == 0) {
-						count++;
-					}
-				}
-			}
-		}
-		return count;
-	}
+/**
+ * Class for solution of threesum problem.
+ */
+public final class Solution {
+    /**
+     * Constructs the object of solution.
+     */
+    private Solution() {
 
-}
-public class Solution {
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		int n = s.nextInt();
-		long [] numbers = new long[n];
-		for (int i = 0; i < n; i++) {
-			numbers[i] = s.nextLong();
-		}
-		ThreeSum t = new ThreeSum(n, numbers);
-		System.out.println(t.threeSum(numbers));
+    }
+    /**
+     * main function is here.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner input = new Scanner(System.in);
+        int arrdim = input.nextInt();
+        int[] threesum = new int[arrdim];
+        for (int i = 0; i < arrdim; i++) {
+            threesum[i] = input.nextInt();
+        }
+        Arrays.sort(threesum);
+        int count = 0;
+        for (int i = 0; i < arrdim - 2; i++) {
+            int j = i + 1;
+            int k = arrdim - 1;
+            while (j < k) {
+                if (threesum[i] + threesum[j] + threesum[k] == 0) {
+                    count++;
+                    j++;
+                    k--;
+                } else if (threesum[i] + threesum[j] + threesum[k] < 0) {
+                    j++;
 
-	}
+                } else {
+                    k--;
+                }
+            }
+
+        }
+        System.out.println(count);
+
+    }
 }
