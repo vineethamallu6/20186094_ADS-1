@@ -1,15 +1,15 @@
 import java.util.Scanner;
 class ThreeSum
 {
-	private int[] array;
-	private int size;
-	public ThreeSum(int size, int[] array) {
+	private long[] array;
+	private long size;
+	public ThreeSum(long size, long[] array) {
 		this.size = size;
 		this.array = array;
 	}
-	public int threeSum(int[] array) {
-		int n = array.length;
-		int count = 0;
+	public long threeSum(long[] array) {
+		long n = array.length;
+		long count = 0;
 		for (int i = 0; i < n; i++) {
 			for (int j = i+1; j < n; j++) {
 				for (int k = j+1; k < n; k++) {
@@ -27,9 +27,9 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
-		int [] numbers = new int[n];
+		long [] numbers = new long[n];
 		for (int i = 0; i < n; i++) {
-			numbers[i] = s.nextInt();
+			numbers[i] = s.nextLong();
 		}
 		ThreeSum t = new ThreeSum(n, numbers);
 		System.out.println(t.threeSum(numbers));
