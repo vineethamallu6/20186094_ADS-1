@@ -9,7 +9,7 @@ class AddLargeNumbers {
      * { var_description }
      */
 
-	static LinkedList<Integer>list1 = new LinkedList<>();
+	static LinkedList<Integer>listNode = new LinkedList<>();
     /**
      * { function_description }
      *
@@ -20,13 +20,11 @@ class AddLargeNumbers {
 	public static LinkedList numberToDigits(String number) {
     	int len = number.length();
     	//BigInteger num = new BigInteger(number);
-
-    	for (int i = 0; i < len; i++) {
-    		list1.add(number.charAt(i) - '0');
+        for (int i = 0; i < len; i++) {
+    		listNode.add(number.charAt(i) - '0');
     	}
         //System.out.println(list1);
-
-    	return list1;
+        return listNode;
     }
     /**
      * { function_description }
@@ -42,11 +40,10 @@ class AddLargeNumbers {
     	//System.out.println(list.toString());
     	int len = list.size();
     	for (int i = 0; i < len; i++) {
-    		numbers = (list1.get(i));
+    		numbers = (listNode.get(i));
     		str += Integer.toString(numbers);
     	}
     	return str;
-
     }
 
     //public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
