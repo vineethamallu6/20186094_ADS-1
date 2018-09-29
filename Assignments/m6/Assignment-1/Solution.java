@@ -6,11 +6,6 @@ import java.math.*;
  */
 class AddLargeNumbers {
     /**
-     * { var_description }
-     */
-
-	static LinkedList<Integer>listNode = new LinkedList<>();
-    /**
      * { function_description }
      *
      * @param      number  The number
@@ -18,12 +13,11 @@ class AddLargeNumbers {
      * @return     { description_of_the_return_value }
      */
 	public static LinkedList numberToDigits(String number) {
-    	int len = number.length();
-    	//BigInteger num = new BigInteger(number);
-        for (int i = 0; i < len; i++) {
-    		listNode.add(number.charAt(i) - '0');
-    	}
-        //System.out.println(list1);
+        LinkedList listNode = new LinkedList ();
+    	String[] str = number.split("");
+        for (int i =0; i<str.length;i++) {
+            listNode.add(str[i]);
+        }
         return listNode;
     }
     /**
@@ -35,15 +29,17 @@ class AddLargeNumbers {
      */
 
     public static String digitsToNumber(LinkedList list) {
-    	int numbers = 0;
-    	String str = "";
-    	//System.out.println(list.toString());
-    	int len = list.size();
-    	for (int i = 0; i < len; i++) {
-    		numbers = (listNode.get(i));
-    		str += Integer.toString(numbers);
-    	}
-    	return str;
+    	String strings = "";
+        String str = "";
+        while(!list.isEmpty1()) {
+            strings += list.pop1();
+        }
+        int len = strings.length() -1;
+        for (int i = len; i >= 0; i--) {
+            str += strings.charAt(i);
+
+        }
+        return str;
     }
 
     //public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
