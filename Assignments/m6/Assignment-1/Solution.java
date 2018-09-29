@@ -1,6 +1,6 @@
 import java.util.Scanner;
-import java.util.*;
-import java.math.*;
+import java.util.Arrays;
+//import java.math.*;
 /**
  * Class for add large numbers.
  */
@@ -14,10 +14,13 @@ class AddLargeNumbers {
      */
 	public static LinkedList numberToDigits(String number) {
         LinkedList listNode = new LinkedList ();
+        //LinkedList<BigInteger> listNode = new LinkedList<> ();
     	String[] str = number.split("");
+        //System.out.println(Arrays.toString(str));
         for (int i =0; i<str.length;i++) {
             listNode.add(str[i]);
         }
+        //System.out.println(listNode);
         return listNode;
     }
     /**
@@ -34,11 +37,13 @@ class AddLargeNumbers {
         while(!list.isEmpty1()) {
             strings += list.pop1();
         }
+       //System.out.println(strings);
         int len = strings.length() -1;
         for (int i = len; i >= 0; i--) {
             str += strings.charAt(i);
 
         }
+        //System.out.println(str);
         return str;
     }
 
