@@ -8,7 +8,7 @@ class AddLargeNumbers {
     /**
      * Constructs the object.
      */
-    AddLargeNumbers() {
+    protected AddLargeNumbers() {
 
     }
     /**
@@ -18,7 +18,7 @@ class AddLargeNumbers {
      *
      * @return     { description_of_the_return_value }
      */
-    public static LinkedList numberToDigits(final String number) {
+    public static LinkedList numberToDigits (final String number) {
         LinkedList listNode = new LinkedList ();
         //LinkedList<BigInteger> listNode = new LinkedList<> ();
         String[] str = number.split("");
@@ -30,7 +30,7 @@ class AddLargeNumbers {
         return listNode;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      list  The list
      *
@@ -40,11 +40,11 @@ class AddLargeNumbers {
     public static String digitsToNumber(final LinkedList list) {
         String strings = "";
         String str = "";
-        while(!list.isEmpty1()) {
+        while (!list.isEmpty1()) {
             strings += list.pop1();
         }
        //System.out.println(strings);
-        int len = strings.length() -1;
+        int len = strings.length() - 1;
         for (int i = len; i >= 0; i--) {
             str += strings.charAt(i);
 
@@ -60,6 +60,11 @@ class AddLargeNumbers {
 }
 
 public class Solution {
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
