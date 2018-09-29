@@ -1,9 +1,22 @@
 import java.util.Scanner;
 import java.util.*;
 import java.math.*;
+/**
+ * Class for add large numbers.
+ */
 class AddLargeNumbers {
+    /**
+     * { var_description }
+     */
 
 	static LinkedList<Integer>list1 = new LinkedList<>();
+    /**
+     * { function_description }
+     *
+     * @param      number  The number
+     *
+     * @return     { description_of_the_return_value }
+     */
 	public static LinkedList numberToDigits(String number) {
     	int len = number.length();
     	//BigInteger num = new BigInteger(number);
@@ -11,17 +24,24 @@ class AddLargeNumbers {
     	for (int i = 0; i < len; i++) {
     		list1.add(number.charAt(i) - '0');
     	}
-        System.out.println(list1);
+        //System.out.println(list1);
 
     	return list1;
     }
+    /**
+     * { function_description }
+     *
+     * @param      list  The list
+     *
+     * @return     { description_of_the_return_value }
+     */
 
     public static String digitsToNumber(LinkedList list) {
     	int numbers = 0;
     	String str = "";
     	//System.out.println(list.toString());
     	int len = list.size();
-    	for (int i = 0; i<len;i++) {
+    	for (int i = 0; i < len; i++) {
     		numbers = (list1.get(i));
     		str += Integer.toString(numbers);
     	}
