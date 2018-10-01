@@ -20,11 +20,11 @@ class PairCount {
 		PairCount p = new PairCount();
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
-		int [] numbers = new int[n];
+		int [] number = new int[n];
 		for (int i = 0; i < n; i++) {
-			numbers[i] = s.nextInt();
+			number[i] = s.nextInt();
 		}
-		System.out.println(p.pairCount(numbers));
+		System.out.println(p.pairCount(number));
 
 	}
 }
