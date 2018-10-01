@@ -1,190 +1,58 @@
 import java.util.Scanner;
 /**
- * Class for deque
+ * class solution.
  */
-class Deque {
+public final class Solution {
     /**
-     * no of elements
-     */
-    private int noOfElements;
-    /**
-     * first, last nodes
-     */
-    private Node first, last;
-    /**
-     * Class for node.
-     */
-    private class Node {
-        /**
-         * data.
-         */
-        private int data;
-        /**
-         * next link.
-         */
-        private Node next;
-        /**
-         * Constructs the object.
-         *
-         * @param      val   The value
-         * @param      link  The link
-         */
-        Node(final int val, final Node link) {
-            this.data = val;
-            this.next = link;
-        }
-    }
-    /**
-     * Constructs the object.
-     */
-    Deque() {
-        noOfElements = 0;
-        first = null;
-        last = null;
-    }
-    /**
-     * Pushes a left.
-     *
-     * @param      value  The value
-     */
-    void pushLeft(final int value) {
-        if (first == null) {
-            first = new Node(value, null);
-            last = first;
-        } else {
-            Node newnode = new Node(value, first);
-            first = newnode;
-        }
-
-        noOfElements++;
-    }
-    /**
-     * Pushes a right.
-     *
-     * @param      value  The value
-     */
-    void pushRight(final int value) {
-        if (last == null) {
-            last = new Node(value, null);
-            first = last;
-        } else {
-            Node newnode = new Node(value, null);
-            last.next = newnode;
-            last = newnode;
-        }
-        noOfElements++;
-    }
-    /**
-     * popleft.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    int popLeft() {
-        if (first != null) {
-            Node popped = first;
-            first = first.next;
-            popped.next = null;
-            noOfElements--;
-            return popped.data;
-
-        } else {
-            return 0;
-        }
-    }
-    /**
-     * pop right.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    int popRight() {
-        if (last != null) {
-            Node temp = null;
-            Node popped = last;
-            Node element = first;
-            while (element != last) {
-                temp = element;
-                element = element.next;
-            }
-            last = temp;
-            last.next = null;
-            //popped.next = null;
-            noOfElements--;
-            return popped.data;
-        } else {
-            return 0;
-        }
-    }
-    /**
-     * size.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    int size() {
-        return noOfElements;
-    }
-    /**
-     * Determines if empty.
-     *
-     * @return     True if empty, False otherwise.
-     */
-    boolean isEmpty() {
-        return first == null;
-    }
-    /**
-     * prints.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    String print() {
-        if (noOfElements != 0) {
-            String str = "";
-            Node temp = first;
-            while (temp != null) {
-                str += Integer.toString(temp.data) + ", ";
-                temp = temp.next;
-            }
-            return "[" + str.substring(0, str.length() - 2) + "]";
-        }
-        return "[]";
-
-    }
-
-}
-/**
- * Class for solution.
- */
-final class Solution {
-    /**
-     * Constructs the object.
-     */
+    * Constructs the object.
+    */
     private Solution() {
-        //function.
+        // leave this blank
     }
     /**
-     * main.
+     * main function to execute test cases.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int noOfinputs = sc.nextInt();
-        for (int i = 0; i < noOfinputs; i++) {
-            Deque queue = new Deque();
-            sc.nextLine();
-            int n = sc.nextInt();
-            int m = sc.nextInt();
-            for (int j = 0; j < n; j++) {
-                queue.pushRight(j);
-            }
-            while (queue.size() != 1) {
-                for (int j = 0; j < m - 1; j++) {
-                    queue.pushRight(queue.popLeft());
+        Scanner scan = new Scanner(System.in);
+        int n = Integer.parseInt(scan.nextLine());
+        Deque d = new Deque();
+        while (n != 0) {
+            String[] tokens = scan.nextLine().split(" ");
+            switch (tokens[0]) {
+            case "pushLeft":
+                d.pushleft(Integer.parseInt(tokens[1]));
+                d.print();
+                break;
+            case "pushRight":
+                d.pushright(Integer.parseInt(tokens[1]));
+                d.print();
+                break;
+            case "size":
+                System.out.println(d.size());
+                break;
+            case "popLeft":
+                if (d.size() == 0) {
+                    System.out.println("Deck is empty");
+                } else {
+                    d.popleft();
+                    d.print();
                 }
-                System.out.print(queue.popLeft() + " ");
-                //queue.print();
+                break;
+            case "popRight":
+                if (d.size() == 0) {
+                    System.out.println("Deck is empty");
+                } else {
+                    d.popright();
+                    d.print();
+                }
+                break;
+            default :
+                break;
             }
-            System.out.print(queue.popLeft());
-            System.out.println();
+            n--;
         }
     }
 }
+
