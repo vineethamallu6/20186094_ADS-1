@@ -1,14 +1,14 @@
 import java.util.Scanner;
 /**
- * Class for deque.
+ * Class for deque
  */
 class Deque {
     /**
-     * no of elements.
+     * no of elements
      */
     private int noOfElements;
     /**
-     * first, last nodes.
+     * first, last nodes
      */
     private Node first, last;
     /**
@@ -173,7 +173,7 @@ final class Solution {
             sc.nextLine();
             int n = sc.nextInt();
             int m = sc.nextInt();
-            for (int j = 1; j < n; j++) {
+            for (int j = 0; j < n; j++) {
                 queue.pushRight(j);
             }
             while (queue.size() != 1) {
