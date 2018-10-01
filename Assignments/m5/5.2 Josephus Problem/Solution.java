@@ -17,7 +17,7 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
-        while (n != 1) {
+        while (n != 0) {
             String[] tokens = scan.nextLine().split(" ");
             int size = Integer.parseInt(tokens[0]);
             int[] new1 = new int[size];
