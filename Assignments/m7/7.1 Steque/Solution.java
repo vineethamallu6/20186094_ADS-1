@@ -7,10 +7,10 @@ public final class Solution {
      * Empty Constructor for checkstyle.
      */
     private Solution() {
-
+        //for check style purpose.
     }
     /**
-     * Main function.
+     * client program.
      *
      * @param      args  The arguments
      */
@@ -46,3 +46,4 @@ public final class Solution {
 
     }
 }
+
