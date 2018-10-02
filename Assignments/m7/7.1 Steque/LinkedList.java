@@ -1,45 +1,115 @@
+/**
+ * List of linkeds.
+ *
+ * @param      <E>   generic parameter.
+ */
 class LinkedList<E> {
+	/**
+	 * Class for node.
+	 */
 
 	private class Node {
+		/**
+		 * data.
+		 */
 
 		E data;
+		/**
+		 * next.
+		 */
 		Node next;
+		/**
+		 * empty constructor.
+		 */
 
-		Node() {}
+		Node() {
+			//for check style purpose.
+		}
+		/**
+		 * Constructor for Node.
+		 *
+		 * @param      data  The data
+		 */
 
-		Node(E data) {
+		Node(final E data) {
 			this(data, null);
 		}
+		/**
+		 * Constructor for Node.
+		 *
+		 * @param      data  The data
+		 * @param      next  The next
+		 */
 
-		Node(E data, Node next) {
+		Node(final E data, final Node next) {
 			this.data = data;
 			this.next = next;
 		}
+		/**
+		 * Gets the next.
+		 *
+		 * @return     The next node.
+		 */
 	public Node getNext() {
         return next;
     }
+    /**
+     * Sets the next.
+     *
+     * @param      node  The node
+     */
 
-    public void setNext(Node node) {
+    public void setNext(final Node node) {
         next = node;
     }
+    /**
+     * Gets the data.
+     *
+     * @return     The data.
+     */
 
     public E getData() {
         return data;
     }
+    /**
+     * Sets the data.
+     *
+     * @param      elem  The element
+     */
 
-    public void setData(E elem) {
+    public void setData(final E elem) {
         data = elem;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
 
- 		   public String toString() {
+ 	public String toString() {
         return data + "";
     }
 	}
+	/**
+	 * head.
+	 */
 	private Node head;
+	/**
+	 * tail.
+	 */
 	private Node tail;
+	/**
+	 * size
+	 */
 	private int size = 0;
+	/**
+	 * push element to get added to list.
+	 * time complexity for push is 1.
+	 *
+	 * @param      e     element.
+	 */
 
-	public void push(E e) {
+	public void push(final E e) {
 		Node newnode = new Node();
 		newnode.data = e;
 		newnode.next = head;
@@ -52,7 +122,12 @@ class LinkedList<E> {
 		head = newnode;
 		size++;
 	}
-	public void pushLast(E e) {
+	/**
+	 * Pushes the element to the last of list.
+	 * time complexity for push is 1.
+	 * @param      e     element.
+	 */
+	public void pushLast(final E e) {
 		if(head == null && tail == null) {
 			Node newnode = new Node();
 			newnode.data = e;
@@ -68,6 +143,10 @@ class LinkedList<E> {
 	size++;
 
 }
+/**
+ * deletes the element from head of list.
+ * time complexity for pop is 1.
+ */
 
 	public void pop() {
 		if(size == 1){
@@ -82,9 +161,21 @@ class LinkedList<E> {
 		size--;
 }
 
+/**
+ * Determines if empty.
+ * time complexity for isEmpty 1.
+ *
+ * @return     True if empty, False otherwise.
+ */
 	public boolean isEmpty() {
 		return head == null;
 	}
+	/**
+	 * Returns a string representation of the object.
+	 * time complexity for toString is n.
+	 *
+	 * @return     String representation of the object.
+	 */
 
 	public String toString() {
         String result = "";
