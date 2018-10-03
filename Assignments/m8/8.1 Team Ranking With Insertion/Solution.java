@@ -1,27 +1,78 @@
 import java.util.Scanner;
+/**
+ * Class for ranking.
+ */
 class Ranking {
+	/**
+	 * { this is a variable for country }.
+	 */
 	private String name;
+	/**
+	 * this is a variable for no of wins.
+	 */
 	private int wins;
+	/**
+	 * this is a variable for no of losses.
+	 */
 	private int losses;
+	/**
+	 * this is a variable for no of draws
+	 */
 	private int draws;
-	Ranking (String n, int w, int l, int d) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      n     country name.
+	 * @param      w     no of wins.
+	 * @param      l     no oflosses.
+	 * @param      d     no of draws.
+	 */
+	Ranking (final String n, final int w, final int l, final int d) {
 		this.name = n;
 		this.wins = w;
 		this.losses = l;
 		this.draws = d;
 	}
+	/**
+	 * Gets the name.
+	 * time complexity is 1.
+	 *
+	 * @return     The name.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * Gets the wins.
+	 * time complexity is 1.
+	 * @return     The wins.
+	 */
 	public int getWins() {
 		return this.wins;
 	}
+	/**
+	 * Gets the losses.
+	 * time complexity is 1.
+	 * @return     The losses.
+	 */
 	public int getLosses() {
 		return this.losses;
 	}
+	/**
+	 * Gets the draws.
+	 * time complexity is 1.
+	 * @return     The draws.
+	 */
 	public int getDraws() {
 		return this.draws;
 	}
+	/**
+	 * this is a function for comparing.
+     * time complexity is 1.
+	 * @param      that  The that
+	 *
+	 * @return     returns value.
+	 */
 	public int compareTo(final Ranking that) {
 		if (this.getWins() < that.getWins()) {
 			return 1;
@@ -43,17 +94,42 @@ class Ranking {
 	return 0;
 }
 }
+/**
+ * Class for sorting.
+ */
 class Sorting {
+	/**
+	 * variable 100.
+	 */
 	private final int hundred = 100;
+	/**
+	 * ranks array.
+	 */
 	private Ranking[] ranks;
+	/**
+	 * size variable.
+	 */
 	private int size;
+	/**
+	 * Constructs the object.
+	 * time complexity is 1.
+	 */
 	Sorting() {
 		ranks = new Ranking[hundred];
 		size = 0;
 	}
+	/**
+	 * adds the ranking objects
+	 * time complexity is 1.
+	 * @param      rank  The rank object.
+	 */
 	public void add(final Ranking rank) {
 		ranks[size++] = rank;
 	}
+	/**
+	 * this is a function for sorting.
+     * time complexity is N^2.
+	 */
 	public void sort() {
 		for (int i = 1; i < size; i++) {
 			Ranking r = ranks[i];
@@ -69,6 +145,11 @@ class Sorting {
 			}
 		}
 	}
+	/**
+	 * Returns a string representation of the object.
+	 * time complexity is 1.
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		String s = "";
 		for (int i = 0; i < size; i++) {
@@ -77,7 +158,9 @@ class Sorting {
 		return s.substring(0, s.length() - 1);
 	}
 }
-
+/**
+ * this is a solution class.
+ */
 public final class Solution {
 	/**
      * Empty Constructor for checkstyle.
@@ -85,6 +168,11 @@ public final class Solution {
     private Solution() {
         //for check style purpose.
     }
+    /**
+     * client program.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
     	Scanner sc = new Scanner(System.in);
     	Sorting s = new Sorting();
