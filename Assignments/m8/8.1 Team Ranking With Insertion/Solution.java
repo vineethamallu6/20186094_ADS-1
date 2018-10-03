@@ -181,7 +181,7 @@ public final class Solution {
             s.add(new Ranking(tokens[0],
                 Integer.parseInt(tokens[1]),
                 Integer.parseInt(tokens[2]),
-                Integer.parseInt(tokens[1+ 2])));
+                Integer.parseInt(tokens[1 + 2])));
         }
         s.sort();
         System.out.println(s);
