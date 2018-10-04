@@ -14,8 +14,9 @@ class Merge {
         //Unused Constructor.
     }
     /**
-     * Method to merge two arrays
-     * time complexity is N
+     * Method to merge two arrays.
+     * time complexity is N.
+     *
      * @param      array  The array
      * @param      aux    The auxiliary
      * @param      lo     The lower value
