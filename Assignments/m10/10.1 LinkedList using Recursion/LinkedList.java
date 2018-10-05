@@ -78,7 +78,7 @@ class LinkedList {
     /**
      * { function_description }
      */
-    void reverse() {
+    public void reverse() {
         reverse(null, head);
     }
     /**
@@ -87,7 +87,7 @@ class LinkedList {
      * @param      preTemp  The pre temporary
      * @param      temp     The temporary
      */
-    void reverse(final Node preTemp, final Node temp) {
+    public void reverse(final Node preTemp, final Node temp) {
         if (temp != null) {
             reverse(temp, temp.next);
             temp.next = preTemp;
@@ -98,7 +98,7 @@ class LinkedList {
     /**
      * { function_description }
      */
-    void display() {
+    public void display() {
         Node temp = head;
         String str = "";
         while(temp != null) {
