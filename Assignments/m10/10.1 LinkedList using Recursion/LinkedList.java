@@ -89,7 +89,7 @@ class LinkedList {
      * @param      preTemp  The pre temporary.
      * @param      temp     The temporary.
      */
-    public void reverse (final Node preTemp, final Node temp) {
+    public void reverse(final Node preTemp, final Node temp) {
         if (temp != null) {
             reverse(temp, temp.next);
             temp.next = preTemp;
