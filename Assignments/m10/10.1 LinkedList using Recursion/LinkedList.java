@@ -41,7 +41,7 @@ class LinkedList {
     }
     /**
      * insert value at specified position using recurssion.
-     *
+     * time complexity is N.
      * @param      position   The position.
      * @param      val        The value.
      *
@@ -57,7 +57,7 @@ class LinkedList {
     }
     /**
      * insert value at specified position.
-     *
+     * time complexity is N.
      * @param      position   The position.
      * @param      head       The head.
      * @param      newNode    The new node.
@@ -79,13 +79,14 @@ class LinkedList {
     }
     /**
      * method to give reverse using recurssion.
+     * time complexity is N.
      */
     public void reverse() {
         reverse(null, head);
     }
     /**
      * method to represent reverse.
-     *
+     * time complexity is N.
      * @param      preTemp  The pre temporary.
      * @param      temp     The temporary.
      */
@@ -99,6 +100,7 @@ class LinkedList {
     }
     /**
      * to display elements.
+     * time complexity is N.
      */
     public void display() {
         Node temp = head;
