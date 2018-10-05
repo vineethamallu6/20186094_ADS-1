@@ -24,16 +24,16 @@ public final class Solution {
                 try {
                 list.insertAt(Integer.parseInt(tokens[1]),
                 Integer.parseInt(tokens[2]));
-                list.display(); }
-            catch (Exception e) {
+                list.display();
+            } catch (Exception e) {
                 System.out.println("Can't insert at this position.");
             }
             break;
             case "reverse":
             try {
             list.reverse();
-            list.display(); }
-            catch (Exception e) {
+            list.display();
+            } catch (Exception e) {
                 System.out.println("No elements to reverse.");
             }
             break;

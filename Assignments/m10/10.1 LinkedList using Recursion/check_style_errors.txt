@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] E:\ADS-1\20186094_ADS-1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:27:33: '}' at column 33 should have line break before. [RightCurly]
-[ERROR] E:\ADS-1\20186094_ADS-1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:35:29: '}' at column 29 should have line break before. [RightCurly]
 Audit done.
-Checkstyle ends with 2 errors.
