@@ -14,7 +14,7 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         LinkedList list = new LinkedList();
         while (s.hasNext()) {
@@ -22,9 +22,9 @@ public final class Solution {
             switch (tokens[0]) {
                 case "insertAt":
                 try {
-                list.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
-                list.display();
-            }
+                list.insertAt(Integer.parseInt(tokens[1]),
+                Integer.parseInt(tokens[2]));
+                list.display();}
             catch (Exception e) {
                 System.out.println("Can't insert at this position.");
             }
@@ -32,12 +32,13 @@ public final class Solution {
             case "reverse":
             try {
             list.reverse();
-            list.display();
-        }
+            list.display();}
             catch (Exception e) {
                 System.out.println("No elements to reverse.");
             }
-                break;
+            break;
+            default:
+            break;
             }
 
         }
