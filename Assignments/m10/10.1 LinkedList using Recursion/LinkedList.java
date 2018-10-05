@@ -14,7 +14,7 @@ class Node {
     /**
      * Constructs the object.
      *
-     * @param      val   The value
+     * @param      val   The value.
      */
     Node(final int val) {
         this.data = val;
@@ -47,7 +47,8 @@ class LinkedList {
      *
      * @throws     Exception  throws exception.
      */
-    public void insertAt(final int position, final int val)throws Exception {
+    public void insertAt(final int position, final int val)
+    throws Exception {
         if (position < 0 || position > size) {
             throw new Exception();
         }
@@ -57,16 +58,17 @@ class LinkedList {
     /**
      * insert value at specified position.
      *
-     * @param      position   The position
-     * @param      head       The head
-     * @param      newNode    The new node
-     * @param      count      The count
+     * @param      position   The position.
+     * @param      head       The head.
+     * @param      newNode    The new node.
+     * @param      count      The count.
      *
      * @return     the value of head.
      *
-     * @throws     Exception  { exception_description }
+     * @throws     Exception  gives exception.
      */
-    public Node insertAt(final int position, final Node head, final Node newNode, final int count) throws Exception {
+    public Node insertAt(final int position, final Node head,
+        final Node newNode, final int count) throws Exception {
         if (position == count) {
             newNode.next = head;
             size++;
@@ -84,8 +86,8 @@ class LinkedList {
     /**
      * method to represent reverse.
      *
-     * @param      preTemp  The pre temporary
-     * @param      temp     The temporary
+     * @param      preTemp  The pre temporary.
+     * @param      temp     The temporary.
      */
     public void reverse(final Node preTemp, final Node temp) {
         if (temp != null) {
