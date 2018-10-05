@@ -25,11 +25,11 @@ class Node {
  */
 class LinkedList {
     /**
-     * { var_description }
+     * head.
      */
     Node head;
     /**
-     * { var_description }
+     * size.
      */
     int size;
     /**
@@ -40,12 +40,12 @@ class LinkedList {
         size = 0;
     }
     /**
-     * { function_description }
+     * insert value at specified position using recurssion.
      *
-     * @param      position   The position
-     * @param      val        The value
+     * @param      position   The position.
+     * @param      val        The value.
      *
-     * @throws     Exception  { exception_description }
+     * @throws     Exception  throws exception.
      */
     public void insertAt(final int position, final int val)throws Exception {
         if (position < 0 || position > size) {
@@ -55,14 +55,14 @@ class LinkedList {
         head = insertAt(position, head, newNode, 0);
     }
     /**
-     * { function_description }
+     * insert value at specified position.
      *
      * @param      position   The position
      * @param      head       The head
      * @param      newNode    The new node
      * @param      count      The count
      *
-     * @return     { description_of_the_return_value }
+     * @return     the value of head.
      *
      * @throws     Exception  { exception_description }
      */
@@ -76,13 +76,13 @@ class LinkedList {
         return head;
     }
     /**
-     * { function_description }
+     * method to give reverse using recurssion.
      */
     public void reverse() {
         reverse(null, head);
     }
     /**
-     * { function_description }
+     * method to represent reverse.
      *
      * @param      preTemp  The pre temporary
      * @param      temp     The temporary
@@ -96,7 +96,7 @@ class LinkedList {
         }
     }
     /**
-     * { function_description }
+     * to display elements.
      */
     public void display() {
         Node temp = head;
