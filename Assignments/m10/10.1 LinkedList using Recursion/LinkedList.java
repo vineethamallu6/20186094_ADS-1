@@ -68,7 +68,7 @@ class LinkedList {
      * @throws     Exception  gives exception.
      */
     public Node insertAt(final int position, final Node head,
-        final Node newNode, final int count) throws Exception {
+    final Node newNode, final int count) throws Exception {
         if (position == count) {
             newNode.next = head;
             size++;
