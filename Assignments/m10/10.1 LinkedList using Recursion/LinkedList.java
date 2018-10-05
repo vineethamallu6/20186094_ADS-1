@@ -47,7 +47,7 @@ class LinkedList {
      *
      * @throws     Exception  { exception_description }
      */
-    void insertAt(final int position, final int val)throws Exception {
+    public void insertAt(final int position, final int val)throws Exception {
         if (position < 0 || position > size) {
             throw new Exception();
         }
@@ -66,7 +66,7 @@ class LinkedList {
      *
      * @throws     Exception  { exception_description }
      */
-    Node insertAt(final int position, final Node head, final Node newNode, final int count) throws Exception {
+    public Node insertAt(final int position, final Node head, final Node newNode, final int count) throws Exception {
         if (position == count) {
             newNode.next = head;
             size++;
