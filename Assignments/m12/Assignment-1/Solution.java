@@ -298,16 +298,6 @@ final class Solution {
             }
         }
 
-        // if (st > 0) {
-        //     for (int k = open; k < n; k++) {
-        //     if (students[k].getcategory().equals("Open") && st > 0) {
-        //             if (!contains(indices, k)) {
-        //                 indices[i++] = k;
-        //                 st--;
-        //             }
-        //         }
-        //     }
-        // }
         Arrays.sort(indices);
         for (int k = 0; k < indices.length; k++) {
             System.out.println(students[indices[k]].print());
