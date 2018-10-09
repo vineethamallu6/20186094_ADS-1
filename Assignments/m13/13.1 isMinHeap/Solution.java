@@ -46,7 +46,7 @@ class Solution {
 				}
 				MinHeap<Integer> m = new MinHeap<Integer>(intarr);
 				//int len = intarr.length;
-				m.isMinHeap(intarr);
+				System.out.println(m.isMinHeap(intarr));
 			}
 			break;
 			case "Float":
