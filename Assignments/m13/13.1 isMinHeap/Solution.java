@@ -9,7 +9,6 @@ class MinHeap<E extends Comparable<E>>{
 			if (!less(arr1[i], arr1[i + 1])) {
 				return false;
 			}
-
 		}
 		return true;
 	}

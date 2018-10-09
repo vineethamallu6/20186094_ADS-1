@@ -41,7 +41,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:45)
+	at Solution.main(Solution.java:44)
 ----------------------------------------
 ########## Testcase 3: Passed ##########
 Expected Output: 
