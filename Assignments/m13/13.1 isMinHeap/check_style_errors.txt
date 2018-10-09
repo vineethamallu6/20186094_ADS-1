@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:7:35: '<' is preceded with whitespace. [GenericWhitespace]
 Audit done.
-Checkstyle ends with 1 errors.

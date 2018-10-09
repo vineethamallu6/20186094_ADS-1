@@ -4,7 +4,7 @@ import java.util.Scanner;
  *
  * @param      <E>   { parameter_description }
  */
-class MinHeap<E extends Comparable <E>> {
+class MinHeap<E extends Comparable<E>> {
     /**
      * { var_description }.
      */
