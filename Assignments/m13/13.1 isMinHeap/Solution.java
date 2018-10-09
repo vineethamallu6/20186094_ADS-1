@@ -1,9 +1,29 @@
 import java.util.Scanner;
+/**
+ * Class for minimum heap.
+ *
+ * @param      <E>   { parameter_description }
+ */
 class MinHeap<E extends Comparable<E>>{
+	/**
+	 * { var_description }
+	 */
 	private E[] array;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      arr   The arr
+	 */
 	MinHeap(E[] arr) {
 		this.array = arr;
 	}
+	/**
+	 * Determines if minimum heap.
+	 *
+	 * @param      arr1  The arr 1
+	 *
+	 * @return     True if minimum heap, False otherwise.
+	 */
 	public boolean isMinHeap(final E[] arr1) {
 		for (int i = 0; i < arr1.length - 1; i++) {
 			if (!less(arr1[i], arr1[i + 1])) {
@@ -12,15 +32,34 @@ class MinHeap<E extends Comparable<E>>{
 		}
 		return true;
 	}
+	/**
+	 * { function_description }
+	 *
+	 * @param      i     { parameter_description }
+	 * @param      j     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public boolean less(final E i, final E j) {
 		return i.compareTo(j) <= 0;
 	}
 
 }
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
 
 	}
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		String line = s.nextLine();
@@ -79,6 +118,8 @@ class Solution {
 				//int len = douarr.length;
 				System.out.println( m.isMinHeap(douarr));
 			}
+			break;
+			default:
 			break;
 		}
 	}
