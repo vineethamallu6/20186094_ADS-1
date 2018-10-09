@@ -4,7 +4,7 @@ import java.util.Scanner;
  *
  * @param      <E>   { parameter_description }
  */
-class MinHeap< E extends Comparable <E>> {
+class MinHeap<E extends Comparable <E>> {
     /**
      * { var_description }.
      */
@@ -56,7 +56,7 @@ public class Solution {
 
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      args  The arguments
      */
@@ -82,8 +82,7 @@ public class Solution {
                 for (int j = 0; j < tokens.length; j++) {
                     intarr[j] = Integer.parseInt(tokens[j]);
                 }
-                MinHeap<Integer> m = new MinHeap<Integer>
-                (intarr);
+            MinHeap<Integer> m = new MinHeap<Integer>(intarr);
                 //int len = intarr.length;
                 System.out.println(m.isMinHeap(intarr));
             }
