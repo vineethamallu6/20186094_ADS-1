@@ -19,7 +19,7 @@ class MinHeap<E extends Comparable<E>> {
     }
     /**
      * Determines if minimum heap.
-     *
+     * the time complexity is N.
      * @param      arr1  The arr 1.
      *
      * @return     True if minimum heap, False otherwise.
