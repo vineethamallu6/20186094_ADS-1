@@ -26,7 +26,7 @@ class Solution {
 		String line = s.nextLine();
 		switch(line) {
 			case "String":
-			int testcases = s.nextInt();
+			int testcases = Integer.parseInt(s.nextLine());
 			for (int i = 0; i < testcases; i++) {
 				String[] tokens = s.nextLine().split(",");
 				MinHeap<String> m = new MinHeap<String>(tokens);
@@ -35,7 +35,7 @@ class Solution {
 			}
 			break;
 			case "Integer":
-			int tests = s.nextInt();
+			int tests = Integer.parseInt(s.nextLine());
 			for (int i = 0; i < tests; i++) {
 				String str = s.nextLine();
 				String[] tokens = str.split(",");
