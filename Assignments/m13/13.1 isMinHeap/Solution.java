@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 class MinHeap<E extends Comparable<E>> {
     /**
-     * { var_description }.
+     * { array }.
      */
     private E[] array;
     /**
@@ -46,17 +46,17 @@ class MinHeap<E extends Comparable<E>> {
 
 }
 /**
- * Class for solution.
+ * Client program.
  */
 public class Solution {
     /**
      * Constructs the object.
      */
     protected Solution() {
-
+        //for check style purpose.
     }
     /**
-     * { function_description }.
+     * { main function }.
      *
      * @param      args  The arguments
      */
