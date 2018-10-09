@@ -33,7 +33,8 @@ class MinHeap<E extends Comparable<E>> {
         return true;
     }
     /**
-     * { function_description }.
+     * less method.
+     * time complexity is 1.
      *
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
