@@ -1,20 +1,7 @@
 Starting audit...
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:7:39: '>' is followed by an illegal character. [GenericWhitespace]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:7:39: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:8: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:17:17: Parameter arr should be final. [FinalParameters]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:35: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:51:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:7:15: '<' is followed by whitespace. [GenericWhitespace]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:7:36: '<' is preceded with whitespace. [GenericWhitespace]
 [ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:58: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:63:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:66:23: 'switch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:85: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:97:48: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:98:48: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:112:48: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:115: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:119:52: '(' is followed by whitespace. [ParenPad]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m13\13.1 isMinHeap\Solution.java:86:17: '(' should be on the previous line. [MethodParamPad]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 4 errors.
