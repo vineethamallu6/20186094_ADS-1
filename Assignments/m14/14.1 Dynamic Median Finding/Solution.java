@@ -2,18 +2,18 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
-	/**
-	 * Constructs the object.
-	 */
+final public class Solution {
+    /**
+     * Constructs the object.
+     */
 
-    private Solution () {
+    private Solution() {
 
     }
     /**
-     * { function_description }
+     * main function.
      *
-     * @param      args  The arguments
+     * @param      args  The arguments.
      */
 
     public static void main(final String[] args) {
