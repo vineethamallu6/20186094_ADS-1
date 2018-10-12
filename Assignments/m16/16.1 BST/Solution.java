@@ -22,7 +22,7 @@ class Book implements Comparable<Book> {
 	 * @param      a     { parameter_description }
 	 * @param      p     { parameter_description }
 	 */
-	Book(String n, String a, String p) {
+	Book(final String n, final String a, final String p) {
 		this.name = n;
 		this.author = a;
 		this.price = p;
@@ -60,7 +60,7 @@ class Book implements Comparable<Book> {
 	 *
 	 * @return     { return int value }.
 	 */
-	public int compareTo(Book that) {
+	public int compareTo(final Book that) {
 		return this.name.compareTo(that.name);
 	}
 
@@ -103,7 +103,7 @@ class BinarySearchTree {
 		 * @param      key    The key.
 		 * @param      value  The value.
 		 */
-		Node(Book key, String value) {
+		Node(final Book key, final String value) {
 			this.key = key;
 			this.value = value;
 		}
@@ -121,7 +121,7 @@ class BinarySearchTree {
 	 * @param      key    The key.
 	 * @param      value  The value.
 	 */
-	public void put(Book key, String value) {
+	public void put(final Book key, final String value) {
 		root = put(root, key, value);
 	}
 	/**
@@ -134,7 +134,7 @@ class BinarySearchTree {
 	 *
 	 * @return     { description_of_the_return_value }.
 	 */
-	public Node put(Node x, Book key, String value) {
+	public Node put(final Node x, final Book key, final String value) {
 		if (x == null) {
 			return new Node(key, value);
 		}
@@ -156,7 +156,7 @@ class BinarySearchTree {
 	 *
 	 * @return     { return the key  }.
 	 */
-	public String get(Book key) {
+	public String get(final Book key) {
 		Node x = root;
 		while (x != null) {
 			int compare = key.getName().compareTo(x.key.getName());
@@ -188,18 +188,18 @@ class Solution {
 	 *
 	 * @param      args  The arguments.
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		 BinarySearchTree b = new BinarySearchTree();
 		while (s.hasNext()) {
 			String[] tokens = s.nextLine().split(",");
 			switch (tokens[0]) {
 				case "put":
-				Book book = new Book(tokens[1], tokens[2], tokens[3]);
-				b.put(book, tokens[4]);
+				Book book = new Book(tokens[1], tokens[2], tokens[2 + 1]);
+				b.put(book, tokens[2 + 2]);
 				break;
 				case "get":
-				book = new Book(tokens[1], tokens[2], tokens[3]);
+				book = new Book(tokens[1], tokens[2], tokens[2 + 1]);
 				System.out.println(b.get(book));
 				break;
 				default:
