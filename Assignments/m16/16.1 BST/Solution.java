@@ -84,19 +84,19 @@ class BinarySearchTree {
 		/**
 		 * { key }.
 		 */
-		Book key;
+		private Book key;
 		/**
 		 * { value }.
 		 */
-		String value;
+		private String value;
 		/**
 		 * { left }.
 		 */
-		Node left;
+		private Node left;
 		/**
 		 * { right }.
 		 */
-		Node right;
+		private Node right;
 		/**
 		 * Constructs the object.
 		 *
@@ -175,11 +175,11 @@ class BinarySearchTree {
  * Client solution.
  */
 
-class Solution {
+final class Solution {
 	/**
 	 * Constructs the object.
 	 */
-	Solution() {
+	protected Solution() {
 		// constructor purpose.
 
 	}

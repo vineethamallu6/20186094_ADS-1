@@ -1,14 +1,9 @@
 Starting audit...
 [ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:87:22: Variable 'key' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:91:24: Variable 'value' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:95:22: Variable 'left' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:99:22: Variable 'right' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:106:33: 'key' hides a field. [HiddenField]
 [ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:106:51: 'value' hides a field. [HiddenField]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:178:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:198: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:202: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 6 errors.
