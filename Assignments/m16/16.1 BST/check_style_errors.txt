@@ -1,9 +1,6 @@
 Starting audit...
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:106:33: 'key' hides a field. [HiddenField]
 [ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:106:51: 'value' hides a field. [HiddenField]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:198: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m16\16.1 BST\Solution.java:202: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 3 errors.

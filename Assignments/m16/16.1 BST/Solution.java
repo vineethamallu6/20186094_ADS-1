@@ -195,11 +195,13 @@ final class Solution {
 			String[] tokens = s.nextLine().split(",");
 			switch (tokens[0]) {
 				case "put":
-				Book book = new Book(tokens[1], tokens[2], tokens[2 + 1]);
+				Book book = new Book(tokens[1],
+					tokens[2], tokens[2 + 1]);
 				b.put(book, tokens[2 + 2]);
 				break;
 				case "get":
-				book = new Book(tokens[1], tokens[2], tokens[2 + 1]);
+				book = new Book(tokens[1],
+					tokens[2], tokens[2 + 1]);
 				System.out.println(b.get(book));
 				break;
 				default:
