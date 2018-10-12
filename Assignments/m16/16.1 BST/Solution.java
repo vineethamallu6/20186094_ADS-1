@@ -100,8 +100,8 @@ class BinarySearchTree {
         /**
          * Constructs the object.
          *
-         * @param      key    The key.
-         * @param      value  The value.
+         * @param      k    The key.
+         * @param      v  The value.
          */
         Node(final Book k, final String v) {
             this.key = k;
