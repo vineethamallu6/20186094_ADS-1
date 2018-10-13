@@ -351,7 +351,7 @@ Vinati Organics 4.03
 
 Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
 	at MinPQ.min(MinPQ.java:114)
-	at Solution.main(Solution.java:66)
+	at Solution.main(Solution.java:114)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -716,7 +716,7 @@ Vinati Organics 4.03
 
 Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
 	at MinPQ.min(MinPQ.java:114)
-	at Solution.main(Solution.java:66)
+	at Solution.main(Solution.java:114)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 

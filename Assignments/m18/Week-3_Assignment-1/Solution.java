@@ -1,18 +1,50 @@
 import java.util.Scanner;
+/**
+ * Class for stock.
+ */
 class Stock implements Comparable<Stock> {
+	/**
+	 * { var_description }
+	 */
 	private String name;
+	/**
+	 * { var_description }
+	 */
 	private float change;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      n     { parameter_description }
+	 * @param      c     { parameter_description }
+	 */
 	Stock(final String n, final float c) {
 		this.name = n;
 		this.change = c;
 	}
+	/**
+	 * Gets the name.
+	 *
+	 * @return     The name.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * Gets the change.
+	 *
+	 * @return     The change.
+	 */
 	public float getChange() {
 		return this.change;
 	}
-	public int compareTo(Stock that) {
+	/**
+	 * { function_description }
+	 *
+	 * @param      that  The that
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public int compareTo(final Stock that) {
 		return this.getName().compareTo(that.getName());
 		//  else {
 		// 	if (this.getChange() > that.getChange()) {
@@ -23,16 +55,32 @@ class Stock implements Comparable<Stock> {
 		// }
 
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		return getName() + " " +getChange();
 	}
 
 }
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
 
 	}
-	public static void main(String[] args) {
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
 		int iterate = 6 * n;
