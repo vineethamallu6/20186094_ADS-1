@@ -1,19 +1,9 @@
 Starting audit...
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:6: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:10: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:40: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:64:41: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:71:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:78: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:86:31: '6' is a magic number. [MagicNumber]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:88:32: '7' is a magic number. [MagicNumber]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:94: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:98:37: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:106:37: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:106:44: '5' is a magic number. [MagicNumber]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:113:37: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:113:44: '5' is a magic number. [MagicNumber]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:86:23: '6' is a magic number. [MagicNumber]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:88:24: '7' is a magic number. [MagicNumber]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:107:25: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:107:32: '5' is a magic number. [MagicNumber]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:114:25: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m18\Week-3_Assignment-1\Solution.java:114:32: '5' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 6 errors.
