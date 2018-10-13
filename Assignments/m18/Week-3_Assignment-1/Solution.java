@@ -104,14 +104,14 @@ public class Solution {
                 }
             }
             int size = maxpq.size();
-            for (int i =0; i < 5; i++) {
+            for (int i = 0; i < 5; i++) {
                 //for (Stock current :maxpq){
                 System.out.println(maxpq.max());
                 size = maxpq.size() - 1;
 
             }
             System.out.println();
-            for (int i =0; i < 5; i++) {
+            for (int i = 0; i < 5; i++) {
                 System.out.println(minpq.min());
             }
             // for (Stock current :maxpq) {
