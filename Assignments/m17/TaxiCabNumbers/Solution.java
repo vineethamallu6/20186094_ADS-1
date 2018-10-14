@@ -4,34 +4,58 @@ import java.util.Scanner;
  */
 class CubeSum implements Comparable<CubeSum> {
     /**
-     * declaration of variable.
+     * variable declaration.
      */
-    public final int sum;
+    private final int sum;
     /**
-     * declaration of variable.
+     * variable declaration.
      */
-    public final int i;
+    private final int number1;
     /**
-     * declaration of variable.
+     * variable declaration.
      */
-    public final int j;
+    private final int number2;
     /**
      * Constructs the object.
      *
-     * @param      i     i.
-     * @param      j     j.
+     * @param      i integer.
+     * @param      j integer.
      */
     CubeSum(final int i, final int j) {
         this.sum = i * i * i + j * j * j;
-        this.i = i;
-        this.j = j;
+        this.number1 = i;
+        this.number2 = j;
     }
     /**
-     * compare to.
+     * Gets the sum.
+     *
+     * @return     The sum.
+     */
+    public int getSum() {
+        return sum;
+    }
+    /**
+     * gets the number.
+     *
+     * @return number.
+     */
+    public int getNumber1() {
+        return number1;
+    }
+    /**
+     * gets the number.
+     *
+     * @return number.
+     */
+    public int getNumber2() {
+        return number2;
+    }
+    /**
+     * compare to method.
      *
      * @param      that  The that
      *
-     * @return     { description_of_the_return_value }
+     * @return  integer.
      */
     public int compareTo(final CubeSum that) {
         if (this.sum < that.sum) {
@@ -48,60 +72,58 @@ class CubeSum implements Comparable<CubeSum> {
      * @return     String representation of the object.
      */
     public String toString() {
-        return sum + " = " + i + "^3" + " + " + j + "^3";
+        return sum + " = " + number1 + "^3" + " + " + number2 + "^3";
     }
 }
 /**
- * class for Solution.
+ * client program.
  */
 public final class Solution {
-    /**
-     * declaration of number.
-     */
-    private static final int SIX = 600;
     /**
      * Constructs the object.
      */
     private Solution() {
-        //empty constructor.
+        //unused constructor.
     }
     /**
-     * Client program.
+     * main method.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        int n = SIX;
+        final int limit = 600;
         Scanner scan = new Scanner(System.in);
-        int num = scan.nextInt();
-        int num1 = scan.nextInt();
+        int n = scan.nextInt();
+        int m = scan.nextInt();
         int count = 0;
         int temp = 1;
         // initialize priority queue
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
-        for (int i = 0; i <= n; i++) {
+        for (int i = 0; i <= limit; i++) {
             pq.insert(new CubeSum(i, i));
         }
         // find smallest sum, print it out, and update
         while (!pq.isEmpty()) {
             CubeSum s = pq.delMin();
-            if (temp == s.sum) {
+            //System.out.println(s.getSum()+" "+temp);
+            if (temp == s.getSum()) {
                 count++;
             } else {
                 count = 0;
             }
-            if (count == num1 - 1) {
-                num--;
-                if (num == 0) {
-                    System.out.println(s.sum);
+            if (count == m - 1) {
+                n--;
+                if (n == 0) {
+                    System.out.println(s.getSum());
                     break;
                 }
             }
-            temp = s.sum;
-            if (s.j < n) {
-                pq.insert(new CubeSum(s.i, s.j + 1));
+            temp = s.getSum();
+            if (s.getNumber2() < limit) {
+                pq.insert(new CubeSum(s.getNumber1(), s.getNumber2() + 1));
             }
         }
     }
 
 }
+

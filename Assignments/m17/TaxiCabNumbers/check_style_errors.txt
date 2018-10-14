@@ -1,8 +1,2 @@
 Starting audit...
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m17\TaxiCabNumbers\Solution.java:9:22: Variable 'sum' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m17\TaxiCabNumbers\Solution.java:13:22: Variable 'i' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m17\TaxiCabNumbers\Solution.java:17:22: Variable 'j' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m17\TaxiCabNumbers\Solution.java:24:23: 'i' hides a field. [HiddenField]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m17\TaxiCabNumbers\Solution.java:24:36: 'j' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 5 errors.
