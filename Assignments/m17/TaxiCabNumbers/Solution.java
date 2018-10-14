@@ -60,6 +60,10 @@ class CubeSum implements Comparable<CubeSum> {
 
 public final class Solution {
     /**
+     * six
+     */
+    private static final int six = 600;
+    /**
      * Constructs the object.
      */
     protected Solution() {
@@ -71,7 +75,6 @@ public final class Solution {
      * @param      args  The arguments.
      */
     public static void main(final String[] args) {
-        final int six = 600;
         int n = six;
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
