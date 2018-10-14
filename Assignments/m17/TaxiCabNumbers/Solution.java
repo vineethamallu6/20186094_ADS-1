@@ -4,15 +4,15 @@ import java.util.Scanner;
  */
 class CubeSum implements Comparable<CubeSum> {
     /**
-     * sum.
+     * declaration of variable.
      */
-    public final  int sum;
+    public final int sum;
     /**
-     * i.
+     * declaration of variable.
      */
     public final int i;
     /**
-     * j.
+     * declaration of variable.
      */
     public final int j;
     /**
@@ -21,20 +21,18 @@ class CubeSum implements Comparable<CubeSum> {
      * @param      i     i.
      * @param      j     j.
      */
-
     CubeSum(final int i, final int j) {
         this.sum = i * i * i + j * j * j;
         this.i = i;
         this.j = j;
     }
     /**
-     * compares objects.
+     * compare to.
      *
      * @param      that  The that
      *
-     * @return     integer after comparing.
+     * @return     { description_of_the_return_value }
      */
-
     public int compareTo(final CubeSum that) {
         if (this.sum < that.sum) {
             return -1;
@@ -49,43 +47,42 @@ class CubeSum implements Comparable<CubeSum> {
      *
      * @return     String representation of the object.
      */
-
     public String toString() {
         return sum + " = " + i + "^3" + " + " + j + "^3";
     }
 }
 /**
- * client solution.
+ * class for Solution.
  */
-
 public final class Solution {
     /**
-     * six
+     * declaration of number.
      */
-    private static final int six = 600;
+    private static final int SIX = 600;
     /**
      * Constructs the object.
      */
-    protected Solution() {
-        //check style purpose.
+    private Solution() {
+        //empty constructor.
     }
     /**
-     * main function.
+     * Client program.
      *
-     * @param      args  The arguments.
+     * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        int n = six;
+        int n = SIX;
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
-        int m = scan.nextInt();
+        int num1 = scan.nextInt();
         int count = 0;
-        int temp = -1;
+        int temp = 1;
         // initialize priority queue
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
         for (int i = 0; i <= n; i++) {
             pq.insert(new CubeSum(i, i));
-    }
+        }
+        // find smallest sum, print it out, and update
         while (!pq.isEmpty()) {
             CubeSum s = pq.delMin();
             if (temp == s.sum) {
@@ -93,7 +90,7 @@ public final class Solution {
             } else {
                 count = 0;
             }
-            if (count == m - 1) {
+            if (count == num1 - 1) {
                 num--;
                 if (num == 0) {
                     System.out.println(s.sum);
@@ -106,4 +103,5 @@ public final class Solution {
             }
         }
     }
+
 }
