@@ -91,7 +91,7 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        final int limit = 600;
+        final int six = 600;
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         int m = scan.nextInt();
@@ -99,7 +99,7 @@ public final class Solution {
         int temp = 1;
         // initialize priority queue
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
-        for (int i = 0; i <= limit; i++) {
+        for (int i = 0; i <= six; i++) {
             pq.insert(new CubeSum(i, i));
         }
         // find smallest sum, print it out, and update
@@ -119,7 +119,7 @@ public final class Solution {
                 }
             }
             temp = s.getSum();
-            if (s.getNumber2() < limit) {
+            if (s.getNumber2() < six) {
                 pq.insert(new CubeSum(s.getNumber1(), s.getNumber2() + 1));
             }
         }
