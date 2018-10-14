@@ -28,19 +28,19 @@ class CubeSum implements Comparable<CubeSum> {
         this.j = j;
     }
     /**
-     * { function_description }
+     * compares objects.
      *
      * @param      that  The that
      *
-     * @return     { description_of_the_return_value }
+     * @return     integer after comparing.
      */
 
     public int compareTo(final CubeSum that) {
         if (this.sum < that.sum) {
-        	return -1;
+            return -1;
         }
         if (this.sum > that.sum) {
-        	return +1;
+            return +1;
         }
         return 0;
     }
@@ -71,7 +71,8 @@ public final class Solution {
      * @param      args  The arguments.
      */
     public static void main(final String[] args) {
-        int n = 600;
+        final int six = 600;
+        int n = six;
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
         int m = scan.nextInt();
