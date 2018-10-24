@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m20\20.1 BST\Solution.java:5: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 1 errors.

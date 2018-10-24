@@ -3,7 +3,7 @@
  */
 import java.util.Scanner;
 /**
- * Class for book
+ * Class for book.
  */
 class Book implements Comparable<Book> {
     /**
