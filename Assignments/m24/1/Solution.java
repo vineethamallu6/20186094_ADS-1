@@ -39,12 +39,16 @@ class Student {
         return this.marks;
     }
 }
-public final class Solution {
+/**
+ * Client solution.
+ */
+class Solution {
     /**
-     * client class.
+     * Constructs the object.
      */
-    private Solution() {
-    }
+    protected Solution() {
+        //check style purpose.
+        }
     /**
      * main function.
      *
@@ -55,10 +59,9 @@ public final class Solution {
         int n = Integer.parseInt(scan.nextLine());
         SeparateChainingHashST<Integer, Student> students = new
         SeparateChainingHashST<>();
-        Student stu = null;
         for (int i = 0; i < n; i++) {
             String[] token = scan.nextLine().split(",");
-            stu = new Student(token[1], Double.parseDouble(token[2]));
+            Student stu = new Student(token[1], Double.parseDouble(token[2]));
             students.put(Integer.parseInt(token[0]), stu);
         }
         int m = Integer.parseInt(scan.nextLine());
