@@ -34,12 +34,10 @@ public final class Solution {
         SeparateChainingHashST<Integer, Student> students= new
         SeparateChainingHashST<>();
         Student stu = null;
-        // LinearProbingHashST<String, Integer> hash
-        // = new LinearProbingHashST<String, Integer>();
-        //BinarySearchTree bst = new BinarySearchTree();
         for (int i = 0; i < n; i++) {
         	String[] token = scan.nextLine().split(",");
         	stu = new Student(token[1], Double.parseDouble(token[2]));
+            students.put(Integer.parseInt(token[0]), stu);
         }
         int m = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < m; i++) {
