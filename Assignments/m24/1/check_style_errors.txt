@@ -1,0 +1,12 @@
+Starting audit...
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m24\1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m24\1\Solution.java:6:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m24\1\Solution.java:7:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m24\1\Solution.java:8:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m24\1\Solution.java:13:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m24\1\Solution.java:16:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m24\1\Solution.java:20: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m24\1\Solution.java:34:58: '=' is not preceded with whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 9 errors.
