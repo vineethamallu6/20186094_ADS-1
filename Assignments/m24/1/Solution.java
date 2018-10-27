@@ -1,18 +1,40 @@
 import java.util.Scanner;
 /**
- * Class for solution.
+ * Class for student.
  */
 class Student {
+    /**
+     * { var_description }
+     */
 	private String name;
+    /**
+     * { var_description }
+     */
 	private double marks;
+    /**
+     * Constructs the object.
+     *
+     * @param      n     { parameter_description }
+     * @param      m     { parameter_description }
+     */
 	Student(final String n, final double m) {
 		this.name = n;
 		this.marks = m;
 	}
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
 
 	public String getName() {
 		return this.name;
 	}
+    /**
+     * Gets the marks.
+     *
+     * @return     The marks.
+     */
 	public double getMarks() {
 		return this.marks;
 	}
@@ -43,16 +65,16 @@ public final class Solution {
         for (int i = 0; i < m; i++) {
         	String[] check = scan.nextLine().split(" ");
         	if (check[2].equals("1")) {
-                int key = Integer.parseInt(check[1]);
-                if (students.contains(key)) {
-                    System.out.println(students.get(key).getName());
+                int roll = Integer.parseInt(check[1]);
+                if (students.contains(roll)) {
+                    System.out.println(students.get(roll).getName());
                 } else {
                     System.out.println("Student doesn't exists...");
                 }
             } else if (check[2].equals("2")) {
-                int key = Integer.parseInt(check[1]);
-                if (students.contains(key)) {
-                    System.out.println(students.get(key).getMarks());
+                int roll = Integer.parseInt(check[1]);
+                if (students.contains(roll)) {
+                    System.out.println(students.get(roll).getMarks());
                 } else {
                     System.out.println("Student doesn't exists...");
                 }
