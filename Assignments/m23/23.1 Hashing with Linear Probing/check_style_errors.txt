@@ -1,6 +1,2 @@
 Starting audit...
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:24:31: 'switch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 3 errors.
