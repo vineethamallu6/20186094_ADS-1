@@ -1,12 +1,6 @@
 Starting audit...
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:6:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:13: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:13:31: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\20186094-ADS1\20186094_ADS-1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:24:31: 'switch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 3 errors.

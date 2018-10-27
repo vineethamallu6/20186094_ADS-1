@@ -1,9 +1,20 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
-
+		//for check style purpose.
 	}
-	public static void main(String[] args) {
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		LinearProbingHashST<String, Integer> hash
 		= new LinearProbingHashST<String, Integer>();
@@ -26,6 +37,8 @@ class Solution {
 				break;
 				case "delete":
 				hash.delete(token[1]);
+				break;
+				default:
 				break;
 			}
 		}
