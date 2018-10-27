@@ -18,7 +18,11 @@ class Solution {
 				System.out.println(hash.get(token[1]));
 				break;
 				case "display":
-				System.out.println(hash.display());
+				try {
+                System.out.println(hash.display());
+                } catch (Exception ex) {
+                    System.out.println("{}");
+                }
 				break;
 				case "delete":
 				hash.delete(token[1]);
