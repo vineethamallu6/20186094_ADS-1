@@ -48,8 +48,18 @@ public final class Solution {
                 int key = Integer.parseInt(check[1]);
                 if (students.contains(key)) {
                     System.out.println(students.get(key).getName());
+                } else {
+                    System.out.println("Student doesn't exists...");
+                }
+            } else if (check[2].equals("2")) {
+                int key = Integer.parseInt(check[1]);
+                if (students.contains(key)) {
+                    System.out.println(students.get(key).getMarks());
+                } else {
+                    System.out.println("Student doesn't exists...");
                 }
             }
+
+            }
         }
-}
-}
+    }
